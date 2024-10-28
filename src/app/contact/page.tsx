@@ -4,7 +4,6 @@ import Heading from '../components/heading'
 import Image from 'next/image'; 
 import contactImg from  '../images/contact.jpg'
 import Font from '../components/Font';
-import Button from '../components/button';
 
 const Contact = () => {
   return (
