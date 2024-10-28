@@ -1,0 +1,105 @@
+.container{
+  background: var(--main-color);
+  padding: var(--section-padding);
+}
+
+.content{
+  background: var(--main-color);
+}
+.content h1{
+  padding-top: 100px;
+  color: var(--light);
+  text-align: center;
+  line-height: 1;
+  font-size: 5rem;
+  font-weight: 600;
+}
+
+
+.content p{
+  padding-inline: 120px;
+  color: var(--light);
+  text-align: center;
+  font-weight: 400;
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+.buttons{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  gap: 20px;
+  transform: translateY(50%);
+  opacity: 0;
+  justify-content: center;
+  align-items: center;
+  animation:slideUp 0.6s ease-out forwards;
+
+}
+
+@keyframes slideUp {
+  to {
+    transform: translateY(0); 
+    opacity: 1; 
+  }
+}
+
+.buttons .button2{
+  padding: 13px 30px;
+  border: 2px solid var(--white);
+  font-weight: 800;
+  border-radius: 45px;
+  width: fit-content;
+  background: transparent;
+  color: var(--white);
+}
+
+.bottom{
+  padding-inline: 30px;
+  position: relative;
+  overflow: hidden;
+  top: 150px;
+  transform: translateX(100%);
+  opacity: 0;
+  animation:slideleft 2s ease-out forwards;
+
+}
+.bottom img{
+  border-radius: 20px;
+}
+@keyframes slideleft {
+  to {
+    transform: translateX(0); 
+    opacity: 1; 
+  }
+}
+
+.key{
+  margin-top: 150px;
+  padding: var(--section-padding);
+}
+
+
+@media (max-width:768px) {
+  .content{
+    padding: 20px;
+
+  }
+  .content h1{
+    padding-top: 20px;
+    font-size: 3rem;
+  }
+  
+  .content p{
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 1.1rem;
+  }
+  .buttons{
+    margin-top: 20px;
+  }
+  .bottom{
+    position: relative;
+    top: 90px;
+  }
+}

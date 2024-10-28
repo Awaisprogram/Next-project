@@ -1,0 +1,38 @@
+
+
+.container{
+  padding: var(--section-padding);
+}
+
+.content{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.content h1{
+  width: 60%;
+ transform: translateX(-100%);
+ animation:slideleft 1.5s ease-out forwards
+}
+@keyframes slideleft {
+to {
+  transform: translateX(0); 
+  opacity: 1; 
+}
+}
+.button{
+  padding: 20px;
+  transform: translateX(100%);
+ animation:slideleft 1.5s ease-out forwards
+}
+
+@media (max-width:768px) {
+  .content{
+    flex-direction: column;
+    text-align: center;
+   
+  }
+  .content h1{
+    width: 100%;
+  }
+}
