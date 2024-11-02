@@ -16,7 +16,7 @@ const libreBaskerville = Libre_Baskerville({
 function Main() {
   return (
     <>
-    <div className={styles["container"]}>
+    <div className={styles["box"]}>
     <div className={styles["content"]}>
       <h1 className={libreBaskerville.className}>Increase your brand awareness digitally</h1>
       
