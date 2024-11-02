@@ -24,7 +24,7 @@ function Main() {
       <p>As a digital marketing agency, we specialize in providing a range of online marketing and advertising-related services. We help businesses and individuals promote your product, service, or brand through various digital channels.</p>
       <div className={styles["buttons"]}>
         <Button click='Lets talk'/>
-        <button className={styles['button2']}>Explore Our Services</button>
+        <button className={styles['button2']}>Our Services</button>
       </div>
     </div> 
     <div className={styles['bottom']}>
